@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="UTF-8">
+<title>Cuidados</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Karla&family=Stoke&display=swap" rel="stylesheet">
+
+<!-- CSS externo -->
+<link rel="stylesheet" href="../Css/Style.css">
+<script src="../JavaScript/script.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+    <!-- logo topo -->
+    <img src="../Imagens/CarrapetLogoTopo.png" class="imgLogo" alt="Logo">
+
+    <!-- contato -->
+    <address class="ender">
+        Largo do Frajola, 23<br>
+        Tel: (21) 94321-1234<br>
+        contato@carrapet.com.br
+    </address>
+
+</header>
+
+<!-- ================= LINKS ================= -->
+
+<nav>
+  <ul>
+    <li><a href="2_Apresentação.html" target="_blank">Apresentação</a></li>
+    <li><a href="3_Cuidados.html" target="_blank">Cuidados</a></li>
+    <li><a href="4_Produtos.html" target="_blank">Produtos</a></li>
+    <li><a href="5_Pedidos.html" target="_blank">Pedidos</a></li>
+  </ul>
+  
+</nav>
+
+
+<section>
+
+<h2 class="titulo">Cuidados para seu Cão</h2>
+
+<div class="listaCuida">
+
+    <!-- ================= LISTA DE SERVIÇOS ================= -->
+<ul>
+<li>Banho
+    <ol>
+        <li id="listaCuida">
+            <a href="#" onclick="abrirJanela('Banho','Cão Pequeno','../Imagens/Pequeno150.png',60)">
+                Cão Pequeno 
+            </a>
+        </li>
+        <li id="listaCuida">
+            <a href="#" onclick="abrirJanela('Banho','Cão Médio','../Imagens/Medio150.png',80)">
+                Cão Médio 
+            </a>
+        </li>
+        <li id="listaCuida">
+            <a href="#" onclick="abrirJanela('Banho','Cão Grande','../Imagens/Grande150.png',120)">
+                Cão Grande 
+            </a>
+        </li>
+    </ol>
+</li>
+
+<li>Tosa
+    <ol>
+        <li id="listaCuida">
+            <a href="#" onclick="abrirJanela('Tosa','Cão Pequeno','../Imagens/Pequeno150.png',85)">
+                Cão Pequeno 
+            </a>
+        </li>
+        <li id="listaCuida">
+            <a href="#" onclick="abrirJanela('Tosa','Cão Médio','../Imagens/Medio150.png',100)">
+                Cão Médio 
+            </a>
+        </li>
+        <li id="listaCuida">
+            <a href="#" onclick="abrirJanela('Tosa','Cão Grande','../Imagens/Grande150.png',160)">
+                Cão Grande 
+            </a>
+        </li>
+    </ol>
+</li>
+
+<li>Pulgas e/ou carrapatos
+    <ol>
+        <li id="listaCuida">
+            <a href="#" onclick="abrirJanela('Desinfestação','Nível 1','../Imagens/Nivel1_150.png',10)">
+               Nível 1 
+            </a>
+        </li>
+        <li id="listaCuida">
+            <a href="#" onclick="abrirJanela('Desinfestação','Nível 2','../Imagens/Nivel2_150.png',15)">
+                Nível 2 
+            </a>
+        </li>
+        <li id="listaCuida">
+            <a href="#" onclick="abrirJanela('Desinfestação','Nível 3','../Imagens/Nivel3_150.png',20)">
+                Nível 3 
+            </a>
+        </li>
+    </ol>
+</li>
+</ul>
+
+<!-- DIV DA JANELA -->
+<div id="janCuida" style="display:none;"></div>
+
+</div>
+
+</section>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="UTF-8">
+<title>Produtos</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Karla&family=Stoke&display=swap" rel="stylesheet">
+
+<!-- CSS externo -->
+<link rel="stylesheet" href="../Css/Style.css">
+<script src="../JavaScript/script.js"></script>
+</head>
+
+<body>
+
+<header>
+
+    <!-- logo topo -->
+    <img src="../Imagens/CarrapetLogoTopo.png" class="imgLogo" alt="Logo">
+
+    <!-- contato -->
+    <address class="ender">
+        Largo do Frajola, 23<br>
+        Tel: (21) 94321-1234<br>
+        contato@carrapet.com.br
+    </address>
+
+</header>
+
+<!-- ================= LINKS ================= -->
+
+<nav>
+  <ul>
+    <li><a href="2_Apresentação.html" target="_blank">Apresentação</a></li>
+    <li><a href="3_Cuidados.html" target="_blank">Cuidados</a></li>
+    <li><a href="4_Produtos.html" target="_blank">Produtos</a></li>
+    <li><a href="5_Pedidos.html" target="_blank">Pedidos</a></li>
+  </ul>
+</nav>
+
+<!-- ================= TABELA DE PRODUTOS ================= -->
+
+<section>
+      <table class="tabProd" id="tabProd">
+
+        <tr>
+            <th colspan="3" class="tituloTab linTH">Produtos para o seu Pet</th>
+        </tr>
+
+        <tr class="linTH">
+            <th>Tipo</th>
+            <th>Produto</th>
+            <th>Descrição</th>
+        </tr>
+
+        <!-- Ração -->
+        <tr>
+            <td rowspan="3" class="linTH">Ração</td>
+
+            <td>
+                <img src="../Imagens/Cao40.png"class="imgPet"><br>
+                <a href="#" onclick="mostrarProduto(0)">Carne</a>
+            </td>
+
+            <!-- COLUNA DINÂMICA -->
+            <td rowspan="4" class="desc">
+
+               <div id="NomeDes"></div>
+
+                 <div id="ImgDes">
+                   <img src="../Imagens/Vazio_150.png">
+                 </div>
+
+                 <div id="PesPrcDes"></div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <img src="../Imagens/Cao40.png" class="imgPet"><br>
+                <a href="#" onclick="mostrarProduto(1)">Carne e Frango</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="../Imagens/Gato40.png" class="imgPet"><br>
+                <a href="#" onclick="mostrarProduto(2)">Carne e Frango</a>
+            </td>
+        </tr>
+
+        <!-- Brinquedo -->
+        <tr>
+            <td class="linTH">Brinquedo</td>
+
+            <td>
+                <img src="../Imagens/Cao40.png" class="imgPet"><br>
+                <a href="#" onclick="mostrarProduto(3)">Osso Silicone</a>
+            </td>
+        </tr>
+
+    </table>
+</section>

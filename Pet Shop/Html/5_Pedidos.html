@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="UTF-8">
+<title>Pedidos</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Karla&family=Stoke&display=swap" rel="stylesheet">
+
+<!-- CSS externo -->
+<link rel="stylesheet" href="../Css/Style.css">
+<script src="../JavaScript/script.js"></script>
+</head>
+
+<body>
+
+<header>
+
+    <!-- logo topo -->
+    <img src="../Imagens/CarrapetLogoTopo.png" class="imgLogo" alt="Logo">
+
+    <!-- contato -->
+    <address class="ender">
+        Largo do Frajola, 23<br>
+        Tel: (21) 94321-1234<br>
+        contato@carrapet.com.br
+    </address>
+
+</header>
+
+<!-- ================= LINKS ================= -->
+
+<nav>
+  <ul>
+    <li><a href="2_Apresentação.html" target="_blank">Apresentação</a></li>
+    <li><a href="3_Cuidados.html" target="_blank">Cuidados</a></li>
+    <li><a href="4_Produtos.html" target="_blank">Produtos</a></li>
+    <li><a href="5_Pedidos.html" target="_blank">Pedidos</a></li>
+  </ul>
+</nav>
+
+<section >
+
+    <div class="divCompras">
+
+      <h4>Compras</h4>
+
+    <form>
+
+        <!-- ================= IDENTIFICAÇÃO ================= -->
+
+        <fieldset class="divLinha">
+            <legend>Identificação</legend>
+
+            <div class="divLinha">
+                <label for="nome" class="colPri">Nome:</label>
+                <input type="text" id="nome" name="nomeCompleto" class="inpGrande">
+            </div>
+        
+
+            <div class="divLinha">
+                <label for="email" class="colPri">E-mail:</label>
+                <input type="email" id="email" name="mail" class="inpGrande">
+            </div>
+       
+
+        <div class="fsDir">
+
+             <div>
+                 <fieldset>
+                    <legend>Gênero:</legend>
+
+                <label class="elementDir"></label>
+                <input type="radio" id="generof" name="fem" checked /> Mas
+                <input type="radio" id="generom" name="mas"> Fem
+                <input type="radio" id="generootr" name="outr"> Outro
+
+                </fieldset>
+            </div>
+
+            <br>
+
+             <div>
+               <fieldset>
+                <legend>Nascimento:</legend>
+                <label class="elementDir"></label>
+                <input type="number" name="dia" class="numDD" min="1" max="31"> /
+                <input type="number" name="mes" class="numDD" min="1" max="12"> /
+                <input type="number" name="ano" class="numQD" min="1940" max="2008">
+               </fieldset>
+            </div>
+         
+        </div>
+
+            <div class="divLinha">
+                <label class="colPri">Endereço:</label>
+                <textarea type="text" id="enedereco" name="ender" class="impEnder"></textarea>
+            </div>
+
+             <div class="divLinha">
+                <label for="telefone" class="colPri">Telefone:</label>
+                <input type="text" id="telefone" name="tel" class="impTelef">
+            </div>
+
+             <div class="divLinha">
+                <label class="colPri">Celular:</label>
+                <input type="text" id="celular" name="cel" class="impTelef">
+            </div>       
+
+        </fieldset>
+       
+        <!-- ================= PRODUTOS E PAGAMENTO ================= -->
+
+        <fieldset class="divLinha">
+
+            <legend>Seleção de Produtos e Pagamento</legend>  
+            
+             <div>
+                <textarea class="listaCompras" id="lista" rows="10" cols="30" name="Pagamento" readonly></textarea>
+             </div>
+
+            <div class="elemEsq">
+                  
+                <select id="produtos" class="linhaProdSel">
+                    <option>-----</option>
+                    <optgroup label="Ração Cão">
+                        <option>PEDIGREE Carne 10kg</option>
+                        <option>Purina Alpo C&F 10kg</option>
+                    </optgroup>
+                    <optgroup label="Ração Gato">
+                        <option>GranPlus Choice C&F 10kg</option>
+                    </optgroup>
+                    <optgroup label="Brinquedo Cão">
+                        <option>JAMBO Osso Silicone</option>
+                    </optgroup>    
+
+                </select>
+
+                 <button type="button" name="botaomais" value="+" onclick="adicionarProduto()" class="fsDir">+</button>     
+
+            </div>   
+
+            <br><br>
+           
+            <div> 
+        
+               <fieldset class="fsEsq"> 
+        
+                <legend>Cartão<br></legend>
+
+                <label class="elemEsq">Bandeira:
+                <input type="radio" name="visa" checked />Visa
+                <input type="radio" name="master">Master
+                <input type="radio" name="elo">Elo
+                </label>
+                
+                <br><br><br>
+            
+                <label class="elemEsq">Validade:
+                <input type="number" id="mes" name="mesValidade" class="numDD" min="6" max="12"> /
+                <input type="number" id="ano" name="anoValidade" class="numQD" min="2026" max="2050">
+                </label>
+                <br><br><br>
+
+                <label for="telefone" class="elemEsq">Número:
+                <input type="text" id="numero" name="numeroCartão" class="impNCC">
+                </label>
+
+               </fieldset>
+               
+            </div>  
+
+              <div class="fsDir">
+                <br>
+                <label for="valor" class="fsdir">Valor R$</label>
+                <input type="number" id="valor" name="valor" value="0" class="numQD">
+
+              </div>
+
+              <div class="elemEsq">   
+                <br> 
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" size="15" onchange="validarCPF()">
+            </div>
+
+        </fieldset>
+
+        <!-- ================= BOTÕES ================= -->
+
+        <div class="botoes">
+            <input type="button" value="Confirmar">
+            <input type="reset" value="Limpar">
+        </div>
+
+
+    </div>
+
+</section>
+
+</body>

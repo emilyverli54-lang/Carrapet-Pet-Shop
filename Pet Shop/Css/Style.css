@@ -1,0 +1,341 @@
+/* ===== ESTRUTURA DO HTML5 - Questão 2, 3, 4 e 5 ===== */
+
+/* BODY */
+body {
+  background: #60A040;
+  color: #F0E090;
+  font-size: 16px;
+  font-family: "Stoke", "Lucida Bright", "liberation";
+  margin: 1px;
+}
+
+/* ===== Style Questão 2 ===== */
+header {
+  display: block;
+  margin-bottom: 1px;
+}
+
+nav {
+  display: block;
+  width: 20%;
+  float: left;
+}
+
+section {
+  display: block;
+  width: 70%;
+  float: right;
+}
+
+/* LINKS  */
+a {
+  text-decoration: none;
+  color: #F0E0A0;
+}
+
+/* LISTAS */
+ol, ul {
+  line-height: 200%;
+}
+
+/* CLASSES PEDIDAS */
+
+.ender {
+  float: right;
+  text-align: right;
+  line-height: 140%;
+  font-size: 14px;
+  font-family: "Karla", Verdana, "Ubuntu";
+  margin-right: 10px; 
+}
+
+.imgLogo {  
+  border-bottom: 4px solid #F0E090;
+  margin-bottom: 6px;
+  padding-bottom: 15px;
+  margin-left: 10px;
+}
+
+.apres {
+  text-align: center;
+  font-size: 16px;
+  margin-right: 130px;
+}
+
+/* Estilos dentro de nav */
+
+nav ul {
+  color: #F0E090;
+  line-height: 230%;
+  margin-top: 40px;
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* ===== Style Questão 3 ===== */
+
+.titulo {
+    font-size: 24px;
+    text-align: center;   
+}
+
+.listaCuida > ul > li {
+    margin-bottom: 20px;
+    list-style-type: square; 
+}
+
+.listaCuida ol {
+    list-style-type: lower-alpha;
+}
+
+.preco {
+    color: #C00000;
+}
+
+.listaCuida {
+    width: 380px;
+    font-size: 14px;
+    color: #3366BB;
+    background-color: #FFFFBB;
+    padding: 10px;
+    border: 2px solid #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+/* ===== Style Questão 4 ===== */
+
+.tituloTab {
+    text-align: center;
+    vertical-align: top;
+}
+
+/* Tabela principal */
+.tabProd {
+    border-collapse: collapse;      /* borda fina e unificada */
+    margin-top: 6px;
+    float: right;
+    margin-right: 250px;
+    font-size: 15px;
+    background-color: #FFFFFF;
+    color: #114499;
+    font-family: "Karla", Verdana, "Ubuntu", sans-serif;
+}
+.desc {
+   width: 200px;
+}
+#ImgDes img {
+    display: block;
+    margin: 0 auto;
+}
+
+#tabProd a {
+    color: #2255AA;
+}
+
+/* Células da tabela */
+.tabProd th,
+.tabProd td {
+    border: 2px solid #000000;
+    padding: 6px 12px 6px 12px;
+    text-align: center;
+}
+
+
+/* Linha de cabeçalho principal */
+.linTH {
+    color: #FFFFFF;
+    background-color: #0077BB;
+    vertical-align: middle;
+    text-align: center;
+    font-family: "Karla", Verdana, "Ubuntu", sans-serif;
+}
+
+/* Colunas de cabeçalho secundárias */
+.colTH {
+    color: #FFFFFF;
+    background-color: #22AAEE;
+    text-align: left;
+    width: 200px;
+
+}
+
+/* Imagem pet */
+.imgPet {
+    width: 40px;        
+    height: 40px;
+}
+
+/* Imagem Prod. */
+.imgProd {
+    width: 90px;
+    height: 90px;
+}
+ 
+/* Cor do preço */
+.preco {
+    color: #C00000;
+}
+
+/* ===== Style Questão 5 ===== */
+
+.divCompras {
+    width: 540px;
+    font-size: 12px;
+    color: #2255AA;
+    background-color: #FFFFBB;
+    padding: 6px 6px 15px 6px;
+    border: 2px solid #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+/* Posicionamento e tamanho de elementos */
+
+.listaCompras {
+  width: 210px;
+  height: 160px;
+  float: right;
+  margin-top: 2px;
+  margin-left: 10px;
+}
+
+.colLabSelProd {
+  width: 230px;
+  height: 40px;
+  float: left;
+}
+
+.colSelProd{
+  width: 160px;
+  float: right;
+}
+
+.linhaProdSel{
+  width: 220px;
+  margin-bottom: 6px;
+  float: left;
+}
+
+.elemEsq {
+  display: block;
+  float: left;
+}
+
+.elemDir {
+  display: block;
+  float: right;
+}
+
+.botoes {
+  text-align: right;
+  margin: 20px 10px 0px 10px;
+}
+
+/* Posicionamento de fieldsets */
+
+.fsEsq {
+   float: left;
+   display: inline;
+   margin: 0px;
+}
+
+.fsDir {
+    float: right;
+    display: inline;
+    margin: 0px;
+}
+
+
+/* Tamanho de elementos de entrada e de valores */
+
+.inpGrande {
+    width: 380px;
+}
+
+.impMedio {
+    width: 80px;
+}
+
+.impNCC {
+    width: 130px;
+}
+
+.impTelef {
+    width: 90px;
+}
+
+.impEnder {
+    width: 180px;
+    height: 50px;
+}
+
+.numDD {
+    width: 30px;
+}
+
+.numQD {
+    width: 50px;
+}
+
+/* Posicionamento e tamanho de elementos do fomulário */
+
+.divLinha {
+    width: 500px;
+    margin-bottom: 6px;
+}
+
+.colDir {
+    float: right;
+    width: 40%;
+}
+
+.colLabCrd {
+    width: 260px;
+    height: 40px;
+    float: left;
+}
+
+.colPri {
+    float: left;
+    display: block;
+    width: 90px;
+}
+
+.colPriCompras {
+    float: left;
+    display: block;
+    width: 86px;
+}
+
+.colPriPag {
+    float: left;
+    display: block;
+    width: 250px;
+}
+
+/* ======= Style AD2 ====== */
+
+/* Janela de exibição (janCuida) */
+#janCuida {
+    text-align: center;
+    font-size: 14px;
+    color: #3366BB;
+    background-color: #FFFFBB;
+    padding: 10px;
+    border: 2px solid #3366BB;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+/* Links dentro da lista de cuidados */
+#listaCuida a {
+    color: #2255AA;
+}
